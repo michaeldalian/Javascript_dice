@@ -1,0 +1,107 @@
+/****************************************************
+ *      Dice
+ *****************************************************/
+
+.dice {
+  position: relative;
+  width: 200px;
+  -webkit-box-shadow: 0px 9px 0px #100e74;
+  -moz-box-shadow: 0px 9px 0px #150442;
+  box-shadow: 0px 9px 0px #0d0436;
+}
+
+/****************************************************
+ *      Bouton poussoir
+ *****************************************************/
+.push_button {
+  position: relative;
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: solid 1px rgb(106, 59, 217);
+  background: #279dcb;
+  text-align: center;
+  padding: 20px 30px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 9px 0px #100e74;
+  -moz-box-shadow: 0px 9px 0px #150442;
+  box-shadow: 0px 9px 0px #0d0436;
+}
+.push_button:active {
+  -webkit-box-shadow: 0px 2px 0px #84261a;
+  -moz-box-shadow: 0px 2px 0px #84261a;
+  box-shadow: 0px 2px 0px #84261a;
+  position: relative;
+  top: 7px;
+}
+
+/* -------------------------------- FIN  Bouton poussoir --------------------------------------------- */
+
+/* -------------------------------- Mise en forme checkbox avec slide --------------------------------------------- */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* -------------------------------- FIN : Mise en forme checkbox avec slide --------------------------------------------- */
